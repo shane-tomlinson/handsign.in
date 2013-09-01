@@ -5,7 +5,7 @@
 const fs        = require('fs');
 const path      = require('path');
 
-const DB_PATH = path.join(__dirname, 'database.json');
+const DB_PATH = path.join(__dirname, '..', 'var', 'database.json');
 
 var db;
 function getDatabase(done) {

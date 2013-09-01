@@ -4,11 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
   <title>{% block title %}{% endblock %}</title>
+  {% block scripts %}{% endblock %}
 </head>
 <body>
   {% block content %}{% endblock %}
-  <script src="/js/lib/leap.js"></script>
-  <script src="/js/start.js"></script>
 </body>
 </html>
 

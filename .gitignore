@@ -2,3 +2,4 @@ node_modules/
 ssl-cert/
 idp-cert/
 
+server/var
