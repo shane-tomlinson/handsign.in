@@ -1,0 +1,25 @@
+{
+  "name": "handsign.in",
+  "author": "Shane Tomlinson <shane@shanetomlinson.com>",
+  "version": "0.0.1",
+  "dependencies": {
+    "hapi": "1.9.6",
+    "nunjucks": "~0.1.10",
+    "underscore": "~1.5.1"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "awsbox": "0.4.5",
+    "node-assert-extras": "0.1.0",
+    "mocha": "1.7.4"
+  },
+  "engines": {
+    "node": ">= 0.8.11"
+  },
+  "scripts": {
+    "start": "node server/start.js",
+    "test": "mocha server/test"
+  }
+}

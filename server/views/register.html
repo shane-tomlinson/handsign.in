@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}Handsign.in - Register{% endblock %}
+
+{% block content %}
+
+  <h1>Handsign.in - Register</h1>
+
+  <section id="results">
+  </section>
+
+  <section id="averages">
+  </section>
+
+  <form action="/register" method="POST">
+    <label for="username">Username</label>
+    <input type="text" name="username" maxlength="50" />
+    <input type="hidden" name="first" />
+    <input type="hidden" name="second"/>
+    <input type="hidden" name="third"/>
+    <input type="hidden" name="forth"/>
+    <input type="hidden" name="fifth"/>
+    <button disabled>Submit</button>
+  </form>
+
+{% endblock %}
+
