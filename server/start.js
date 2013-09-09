@@ -7,7 +7,7 @@ const path      = require('path');
 const routes     = require('./lib/routes');
 
 var IP_ADDRESS = process.env.IP_ADDRESS || '127.0.0.1';
-var PORT = process.env.PORT || 3000;
+var PORT = parseInt(process.env.PORT || 3000, 10);
 
 // Create a server with a host and port
 var server = hapi.createServer(IP_ADDRESS, PORT);
