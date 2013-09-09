@@ -19,7 +19,7 @@ exports.handler = function (request) {
     supportDoc = JSON.stringify({
       "public-key": JSON.parse(publicKey),
       "authentication": "/sign_in",
-      "provisioning": "/provisioning"
+      "provisioning": "/provision"
     }, null, 2);
     sendSupportDoc(request);
   });
