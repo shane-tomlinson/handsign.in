@@ -17,9 +17,9 @@ exports.handler = function (request) {
     // XXX check for error.
     //
     supportDoc = JSON.stringify({
-      'public-key': publicKey,
-      'authentication': '/sign_in',
-      'provisioning': '/provisioning'
+      "public-key": JSON.parse(publicKey),
+      "authentication": "/sign_in",
+      "provisioning": "/provisioning"
     }, null, 2);
     sendSupportDoc(request);
   });
