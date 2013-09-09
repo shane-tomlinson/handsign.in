@@ -8,11 +8,24 @@ const templates = require('../templates');
 exports.method = 'GET';
 exports.path   = '/.well-known/browserid';
 
+var supportDoc;
+
 exports.handler = function (request) {
+  if (supportDoc) return sendSupportDoc(request);
+
   keys.get(function(err, publicKey, privateKey) {
-    request.reply(templates.render('well_known.json', {
-      publicKey: publicKey
-    })).type('application/json');
+    // XXX check for error.
+    //
+    supportDoc = JSON.stringify({
+      'public-key': publicKey,
+      'authentication': '/sign_in',
+      'provisioning': '/provisioning'
+    }, null, 2);
+    sendSupportDoc(request);
   });
-}
+};
+
+function sendSupportDoc(request) {
+  request.reply(supportDoc).type('application/json');
+};
 

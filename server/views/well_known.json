@@ -1,5 +1,0 @@
-{
-  'public_key': {{ publicKey }},
-  'authentication': '/sign_in',
-  'provisioning': '/provisioning'
-}
