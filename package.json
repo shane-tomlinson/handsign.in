@@ -5,7 +5,9 @@
   "dependencies": {
     "hapi": "1.9.6",
     "nunjucks": "~0.1.10",
-    "underscore": "~1.5.1"
+    "underscore": "~1.5.1",
+    "browserid-certifier": "0.0.1",
+    "browserid-keys": "0.0.0"
   },
   "devDependencies": {
     "grunt": "0.4.1",
@@ -13,7 +15,8 @@
     "grunt-contrib-uglify": "~0.2.2",
     "awsbox": "0.4.5",
     "node-assert-extras": "0.1.0",
-    "mocha": "1.7.4"
+    "mocha": "1.7.4",
+    "browserid-keys": "0.0.0"
   },
   "engines": {
     "node": ">= 0.8.11"
